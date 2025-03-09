@@ -24,3 +24,246 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+
+/* ---- HOME PAGE ----*/
+
+.home_container {
+  background: linear-gradient(to bottom, #013e013e, #0000003c);
+  height: 100vh;
+}
+
+.home_navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background-color: #1d2e21;
+}
+
+.home_menu_button {
+  padding: 0.5rem 1rem;
+  size: 1rem;
+}
+
+.home_title {
+  font-family: 'Quicksand', sans-serif; 
+  font-weight: 700;
+  color: #bac4bc;
+  padding-top: 50px;
+  padding-left: 80px;
+  padding-right: 80px;
+  justify-self: center;
+  text-align: center;
+  font-size: 130px;
+  flex-wrap: wrap;
+  text-decoration: underline;
+}
+
+.home_subtitle {
+  font-family: 'Quicksand', sans-serif; 
+  font-weight: 700;
+  color: #bac4bc;
+  padding-top: 40px;
+  padding-left: 50px;
+  padding-right: 50px;
+  justify-self: center;
+  text-align: center;
+  font-size: 40px;
+  flex-wrap: wrap;
+}
+
+
+.home_compare_button_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 90px;
+}
+
+.home_compare_button {
+  justify-self: center;
+  border-radius: 25px;
+  padding: 40px 80px;
+  background-color: #434343;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 40px;
+}
+
+.home_compare_button:hover {
+  background-color: #005bb5;
+}
+
+/* ---- COMPARE PAGE ----*/
+.search_wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: black;
+  padding: 10px;
+  z-index: 1000;
+}
+
+.search_input {
+  width: 95%;
+  padding: 12px 20px 12px 12px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+}
+
+.search_button {
+  width: 4%;
+  margin-left: 10px;
+  padding: 12px 7px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.compare_cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  padding: 20px;
+  margin-top: 100px; /* Adjust for the fixed search bar */
+}
+
+.compare_card {
+  flex: 1 1 100%;
+  height: 200px;
+  border: 2px solid #3e3333;
+  border-radius: 10px;
+  background-color: #343131;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 20px;
+  box-sizing: border-box;
+  width: 95vw;
+}
+
+.card_image {
+  height: 150px;
+  width: 150px;
+  border-radius: 5px;
+}
+
+.card_image_modal {
+  height: 450px;
+  width: 450px;
+  border-radius: 5px;
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+.modal.fade-in {
+  opacity: 1;
+}
+
+.modal_content {
+  background: rgb(75, 73, 73);
+  padding: 20px;
+  width: 80%;
+  height: 80%;
+  border-radius: 5px;
+  position: relative;
+}
+
+.close {
+  position: absolute;
+  top: 0px;
+  right: 10px;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.modal_h2 {
+  text-align: center;
+  font-size: 30px;
+  margin-top: 20px;
+}
+
+.modal_flex_container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 20px;
+  padding: 20px;
+  height: 100%;
+  width: 100%;
+}
+
+.modal_flex_item_left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+  height: 100%;
+  margin-right: 20px;
+}
+
+.modal_flex_item_right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  background: #2c2c2c;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  flex: 1;
+  height: 100%;
+}
+
+.vendors_title {
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+.vendors_list {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+.vendor_item {
+  margin-bottom: 10px;
+}
+
+.vendor_link {
+  text-decoration: none;
+  color: rgb(103, 103, 161);
+  font-size: 30px;
+}
+
+.vendor_link:hover {
+  text-decoration: underline;
+}
+
+.vendor_price {
+  color: gray;
+}
