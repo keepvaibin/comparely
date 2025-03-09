@@ -1,3 +1,5 @@
+Tthis is a MVP made for a class project, using data compiled from Google Shopping data and other sources to compile a list of Smartphones that are being sold by multiple vendors. The purpose of this website is to data scrape and pull up prices, but considering the lack of time to complete the project, it's only a POC. The website can be accessed here: https://comparely-rose.vercel.app/home
+
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
